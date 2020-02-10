@@ -87,16 +87,21 @@
         width:70%;
     }
     .lamppost-project-info-div img{
-        width:58vw;
+        width:70vw;
         height:30vh;
         margin:0px;
         padding:0px;
     }
     .lamppost-framework-bg{
-        width:58vw;
+        width:70vw;
     }
     .lamppost-framework-bg img{
         height:20px;
         width:20px;
+    }
+    .lamppost-github-link{
+        font-size:5vw;
+        padding:1vw;
+        margin-right:0;
     }
 }

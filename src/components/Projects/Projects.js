@@ -29,7 +29,7 @@ const data1 = <div className="project-images">
     <div className="project-info-div">
         <p className="project-info-heading">{chordsHeading}</p>
         <p className="project-info-desc">Build chord positions in your guitar, any fret, any tuning</p>
-        <div>
+        <div className="project-info-links-1">
             <a href="https://github.com/Ankur19/chords-app" target="_blank" rel="noopener noreferrer">View source</a>
             <a href="https://drive.google.com/file/d/1R1VeVZvBptdGaj1dBfnSOsHeF-zubfkR/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download</a>
         </div>

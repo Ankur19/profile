@@ -79,4 +79,7 @@
     .about-container{
         flex-direction:column;
     }
+    .about-top-details{
+        margin-bottom:8vh;
+    }
 }
