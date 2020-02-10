@@ -1,0 +1,120 @@
+#skills-main-div{
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+#image-hexagon{
+    width:50%;
+    height:100%;
+    position:relative;
+}
+#skills-chart{
+    width:50%;
+    height:100%;
+    padding-left:10%;
+    padding-right:10%;
+}
+#all-skills-div{
+    height:90%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.skills-one-skill{
+    display:flex;
+    flex-direction:row;
+    height:3vh;
+    background-color:#D9D9D9;
+    width:100%;
+    margin:1vh 0px;
+}
+.skills-skillname{
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:20%;
+    background-color:#A4BF7A;
+    color:#0D0D0D;
+    font-size:2vh;
+    font-weight:700;
+    line-height:3vh;
+    box-shadow:10 0 2vw 1vw #A4BF7A;
+}
+.skills-percentage-p{
+    height:100%;
+    margin:0px;
+    padding:0px;
+    background-color:#6C7339;
+    transition:width 1s ease-in;
+}
+.skills-filler-p{
+    margin-left:auto;
+}
+#img-hex-1{
+    margin-top:30%;
+    display:inline-block;
+    background:transparent;
+    height:40vh;
+    width:40vw;
+    border-radius:50%;
+    transform:rotate(120deg);
+    overflow:hidden;
+}
+
+#img-hex-2{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    transform:rotate(-60deg);
+    overflow:hidden;
+    background:transparent;
+}
+
+#img-hex-3{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    transform:rotate(-60deg);
+    overflow:hidden;
+    background: url("me.jpg");
+    background-size:contain;
+    opacity:0.4;
+}
+
+@media only screen and (max-width: 992px){
+    #skills-main-div{
+        flex-direction:column;
+        align-items:center;
+        justify-items:center;
+    }
+    #image-hexagon{
+        height:50vh;
+        width:100%;
+    }
+    #skills-chart{
+        height:50vh;
+        width:100%;
+        padding:0px;
+    }
+    #all-skills-div{
+        width:90%;
+        height:100%;
+        text-align:center;
+        margin-left:5%;
+    }
+    .skills-one-skill{
+        align-self:center;
+        margin:0.5vh 0;
+    }
+    #img-hex-1{
+        margin-top:5%;
+    }
+    #img-hex-3{
+        background: url("me_small.jpg");
+        background-size:contain;
+    }
+    
+}

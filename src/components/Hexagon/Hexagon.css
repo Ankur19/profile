@@ -1,0 +1,65 @@
+.hexagon-main{
+    position:relative;
+    display:inline-block;
+    padding:1vw;
+}
+.hexagon-base{
+    height:9vw;
+    width:5.15vw;
+    background-color:#6C7339;
+}
+
+.hexagon-base1{
+    display:flex;
+    content:"";
+    height:9vw ;
+    width:5.15vw;
+    background-color:#6C7339;
+    transform:rotate(60deg);
+    position:absolute;
+    top:1vw;
+    left:1vw;
+}
+
+.hexagon-base2{
+    display:flex;
+    content:"";
+    height:9vw;
+    width:5.15vw;
+    background-color:#6C7339;
+    transform:rotate(-60deg);
+    position:absolute;
+    top:1vw;
+    left:1vw;
+}
+
+.hexagon-main img{
+    height:5.15vw;
+    width:5.15vw;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+    top:2.925vw;
+    left:1vw;
+}
+@media only screen and (max-width: 992px){
+    .hexagon-base{
+        height:15vw;
+        width:8.6vw;
+    }
+    .hexagon-base1{
+        height:15vw;
+        width:8.6vw;
+    }
+    .hexagon-base2{
+        height:15vw;
+        width:8.6vw;
+    }
+    .hexagon-main img{
+        height:8.6vw;
+        width:8.6vw;
+        position:absolute;
+        top:4.2vw;
+        left: 1vw;
+    }
+}
