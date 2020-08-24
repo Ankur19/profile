@@ -108,7 +108,7 @@ function MainText(props){
         window.open('https://www.github.com/ankur19', "_blank") || window.location.replace('https://www.github.com/ankur19');
     }
     const handleResumeDownload = () => {
-        window.open('https://www.github.com/ankur19', "_blank") || window.location.replace('https://www.github.com/ankur19');
+        window.open('https://github.com/Ankur19/profile/raw/master/public/Resume.pdf', "_blank") || window.location.replace('https://github.com/Ankur19/profile/raw/master/public/Resume.pdf');
     }
 
     return <div className="maintext-main">
