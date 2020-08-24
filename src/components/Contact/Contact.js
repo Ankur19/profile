@@ -9,6 +9,7 @@ function Contact(props){
             <textarea name="text" className="feedback-input" placeholder="Comment"></textarea>
             <input type="submit" value="SUBMIT"/>
         </form>
+        <p style={{color:"white"}}>Made with <span style={{color:"red"}}>&#10084;</span> by Ankur Saikia</p>
     </div>
 }
 

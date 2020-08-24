@@ -116,5 +116,8 @@
         background: url("me_small.jpg");
         background-size:contain;
     }
+    .skills-skillname{
+        font-size:1.5vh
+    }
     
 }

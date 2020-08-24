@@ -37,9 +37,14 @@
     display:flex;
     flex-direction:row;
     justify-content:center;
+    opacity:0;
+    transition: opacity .3s ease-in;
+    margin-top:20vh;
 }
 .maintext-footer{
-    margin-top:20vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 #maintext-link-to-next{
     opacity:0;
@@ -94,7 +99,7 @@
         font-size:4vw;
     }
     #maintext-link-to-next{
-        font-size:2.5vw;
+        font-size:3vh;
     }
     #maintext-txt5{
         width:30vw;

@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import "./Skills.css";
 
 const skillIds = ["html", "css", "javascript","react", "python","c", "dbms", "electron", "spring", "php", "cloud", "cicd"]
-const skillPercent = [90, 85, 80, 65, 65,45, 77, 60,70,40, 59,30];
+const skillPercent = [90, 85, 80, 90, 65, 65, 77, 60,70,40, 59,30];
 function Skills(props){
     useEffect(()=>{
         if(props.scrollPosition===2){

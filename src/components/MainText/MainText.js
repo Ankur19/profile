@@ -4,6 +4,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { makeStyles } from "@material-ui/core";
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const mainText = "< Hi, I am ";
 const mainTextSpan = "Ankur Saikia />";
@@ -11,7 +12,6 @@ const mtSmallTxt = "I am a software developer/engineer"
 const myLoves = ["Problem Solving", "C++", "Javascript", "Software", "Automation", "Guitar"];
 const viewWorkTxt = "< View my work />";
 let typeDelay = 100;
-let curLength = 0;
 let curLength1 = 0;
 let curLength2 = 0;
 let myLovesIndex = 0;
@@ -19,7 +19,13 @@ let myLovesIndex = 0;
 const useStyles = makeStyles((theme) => ({
     externalIcons:{
         fontSize:theme.spacing(5),
-        margin:theme.spacing(1)
+        margin:theme.spacing(1),
+        color:'#D9D9D9'
+    },
+    expandIcon:{
+        alignSelf:'center',
+        fontSize:theme.spacing(5),
+        color:'#D9D9D9'
     }
 }))
 
@@ -40,8 +46,7 @@ function MainText(props){
             else{
                 clearInterval(interval);
             }
-        }, typeDelay);*/
-        curLength=mainText.length;
+        }, typeDelay);
 
         const interval1 = setInterval(()=>{
             if(curLength===mainText.length){
@@ -60,7 +65,11 @@ function MainText(props){
                     document.getElementById('maintext-small-dot').style.display = "block";
                 }
             }
-        }, typeDelay-50);
+        }, typeDelay-50);*/
+
+        document.getElementById('maintext-heading-dot').style.display = "none";
+        document.getElementById('maintext-small-dot').style.display = "block";
+        curLength1 = mainTextSpan.length;
 
         const interval2 = setInterval(()=>{
             if(curLength1===mainTextSpan.length){
@@ -79,6 +88,7 @@ function MainText(props){
                     document.getElementById('maintext-txt4').style.opacity = "1";
                     document.getElementById('maintext-link-to-next').style.opacity = "1";
                     document.getElementById('maintext-txt5').innerHTML = myLoves[myLoves.length - 2];
+                    document.getElementById('maintext-externals').style.opacity = "1";
                 }
             }
         }, typeDelay-50);
@@ -112,7 +122,7 @@ function MainText(props){
     }
 
     return <div className="maintext-main">
-        <p className="maintext-heading"><span id="maintext-txt1">{mainText}</span><span id="maintext-txt2"></span><span id="maintext-heading-dot">&nbsp;</span></p>
+        <p className="maintext-heading"><span id="maintext-txt1">{mainText}</span><span id="maintext-txt2">{mainTextSpan}</span><span id="maintext-heading-dot">&nbsp;</span></p>
         <p className="maintext-maintext"><span id="maintext-txt3"></span><span id="maintext-small-dot">&nbsp;</span></p>
         <p className="maintext-maintext"><span id="maintext-txt4"># I love:&nbsp;&nbsp;</span><span id="maintext-txt5"></span></p>
         <div id="maintext-externals">
@@ -120,7 +130,12 @@ function MainText(props){
             <GitHubIcon className={classes.externalIcons} onClick={handleGithubClick} />
             <AssignmentIcon className={classes.externalIcons} onClick={handleResumeDownload}/>
         </div>
-        <a href="#about"><p className="maintext-footer" ><span id="maintext-link-to-next">{viewWorkTxt}</span></p></a>
+        <a href="#about">
+            <p className="maintext-footer" >
+                <span id="maintext-link-to-next">{viewWorkTxt}</span>
+                <ExpandMoreIcon className={classes.expandIcon}/>
+            </p>
+        </a>
     </div>
 }
 export default MainText;
