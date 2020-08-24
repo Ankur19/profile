@@ -28,7 +28,15 @@
 #maintext-txt5{
     color:#D9D9D9;
     font-weight:500;
+    width:15vw;
+    align-self: right;
     transition: opacity .3s ease-in;
+}
+#maintext-externals{
+    color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
 }
 .maintext-footer{
     margin-top:20vh;
@@ -87,5 +95,8 @@
     }
     #maintext-link-to-next{
         font-size:2.5vw;
+    }
+    #maintext-txt5{
+        width:30vw;
     }
 }
